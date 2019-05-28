@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="150dp"
+                                   android:layout_height="190dp"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:layout_margin="12dp"
+              android:orientation="vertical"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:layout_margin="5dp"
+    >
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="4"
+
+        />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="2" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:text="Location: "
+                      android:layout_gravity="center"
+            />
+            <TextView
+                    android:id="@+id/location_title"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:text="Location"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#2d2d2d"
+                    android:textSize="18sp"
+                    android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+        >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:text="GeoLocation: "
+            />
+            <TextView
+                    android:id="@+id/location_geo"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Degrees"
+                    android:layout_gravity="center"
+                    android:textColor="#2d2d2d"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+            />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+        >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:text="Price: "
+            />
+            <TextView
+                    android:id="@+id/location_price"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Price"
+                    android:layout_gravity="center"
+                    android:textColor="#2d2d2d"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+        >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:text="Hops: "
+            />
+
+            <TextView
+                    android:id="@+id/location_hops"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Hops"
+                    android:layout_gravity="center"
+                    android:textColor="#2d2d2d"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+            />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
